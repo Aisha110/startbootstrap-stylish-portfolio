@@ -5,251 +5,428 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Con O'Neill &amp; Associates — experienced criminal and traffic law representation in Adelaide, South Australia.">
+  <meta name="author" content="Con O'Neill &amp; Associates">
 
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
+  <title>Con O'Neill &amp; Associates | Adelaide Criminal &amp; Traffic Lawyers</title>
 
-  <!-- Bootstrap Core CSS -->
+  <!-- Bootstrap Core CSS (grid only) -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Fonts -->
+  <!-- Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <!-- Typography: Playfair Display (display serif) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Con O'Neill & Associates custom styles -->
+  <link href="css/law-firm.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
+  <nav class="lf-nav" id="lf-nav">
+    <div class="lf-container lf-nav-inner">
+      <a href="#page-top" class="lf-brand">
+        <span class="lf-brand-name">Con O&rsquo;Neill <em>&amp; Associates</em></span>
+        <span class="lf-brand-sub">Barristers &amp; Solicitors</span>
+      </a>
+
+      <ul class="lf-nav-links" id="lf-nav-links">
+        <li><a href="#practice-areas" class="lf-nav-link">Practice Areas</a></li>
+        <li><a href="#why-us" class="lf-nav-link">About</a></li>
+        <li><a href="#team" class="lf-nav-link">Our Team</a></li>
+        <li><a href="#testimonials" class="lf-nav-link">Reviews</a></li>
+        <li><a href="#contact" class="lf-nav-link">Contact</a></li>
+        <li class="lf-nav-mobile-cta"><a href="#contact" class="lf-btn lf-btn-gold">Free Consultation</a></li>
+      </ul>
+
+      <div class="lf-nav-cta">
+        <a href="tel:+61438691859" class="lf-nav-phone">
+          <i class="fas fa-phone-alt"></i>
+          <span>0438 691 859</span>
+        </a>
+        <a href="#contact" class="lf-btn lf-btn-gold">Free Consultation</a>
+        <button class="lf-nav-toggle" id="lf-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="lf-nav-links">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Stylish Portfolio</h1>
-      <h3 class="mb-5">
-        <em>A Free Bootstrap Theme by Start Bootstrap</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+  <!-- Hero -->
+  <header class="lf-hero" id="page-top">
+    <div class="lf-container lf-hero-inner">
+      <span class="lf-hero-eyebrow">Adelaide, South Australia</span>
+      <h1 class="lf-reveal">Expert Traffic &amp; Criminal Law<br>Representation, Built on <em>Trust</em></h1>
+      <p class="lf-hero-lede lf-reveal">Con O&rsquo;Neill &amp; Associates, part of the O&rsquo;Neill Partners group, defends clients across Adelaide and South Australia with sharp legal judgement and genuine personal attention — from traffic matters to serious criminal charges.</p>
+      <div class="lf-hero-actions lf-reveal">
+        <a href="#contact" class="lf-btn lf-btn-gold">Get a Free Consultation</a>
+        <a href="tel:+61438691859" class="lf-btn lf-btn-outline-light"><i class="fas fa-phone-alt"></i> Call 0438 691 859</a>
+      </div>
+      <div class="lf-hero-meta lf-reveal">
+        <div class="lf-hero-meta-item">
+          <i class="fas fa-award"></i>
+          <div><span>Experience</span><strong>20+ Years</strong></div>
+        </div>
+        <div class="lf-hero-meta-item">
+          <i class="fas fa-balance-scale"></i>
+          <div><span>Focus</span><strong>Criminal &amp; Traffic Law</strong></div>
+        </div>
+        <div class="lf-hero-meta-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><span>Offices</span><strong>Adelaide &amp; Salisbury</strong></div>
+        </div>
+      </div>
     </div>
-    <div class="overlay"></div>
+    <div class="lf-scroll-cue"><span>Scroll</span><span class="lf-scroll-cue-line"></span></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-        </div>
+  <!-- Experience / Stats -->
+  <div class="lf-stats">
+    <div class="lf-container lf-stats-grid">
+      <div class="lf-reveal-item">
+        <div class="lf-stat-num" data-count="20" data-suffix="+">0</div>
+        <div class="lf-stat-label">Years Combined Experience</div>
+      </div>
+      <div class="lf-reveal-item">
+        <div class="lf-stat-num" data-count="1000" data-suffix="+">0</div>
+        <div class="lf-stat-label">Matters Represented</div>
+      </div>
+      <div class="lf-reveal-item">
+        <div class="lf-stat-num" data-count="2" data-suffix="">0</div>
+        <div class="lf-stat-label">Adelaide Metro Offices</div>
+      </div>
+      <div class="lf-reveal-item">
+        <div class="lf-stat-num" data-count="24" data-suffix="/7">0</div>
+        <div class="lf-stat-label">Client Availability</div>
       </div>
     </div>
-  </section>
-
-  <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-          <h4>
-            <strong>Responsive</strong>
-          </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Redesigned</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Favorited</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>Question</strong>
-          </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/themes/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Stationary</div>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Ice Cream</div>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Strawberries</div>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Workspace</div>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section>
-
-  <!-- Map -->
-  <div id="contact" class="map">
-    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
   </div>
 
+  <!-- Practice Areas -->
+  <section class="lf-section lf-section-light" id="practice-areas">
+    <div class="lf-container">
+      <div class="lf-section-head center lf-reveal">
+        <span class="lf-eyebrow">Areas of Practice</span>
+        <h2>Experienced Representation, Every Jurisdiction</h2>
+        <p style="margin: 0 auto;">Con O&rsquo;Neill &amp; Associates specialises in navigating the complexities of criminal law and traffic offences, ensuring clients receive the best possible representation.</p>
+      </div>
+
+      <div class="lf-practice-grid lf-reveal-group">
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-car-crash"></i></div>
+          <h3>Traffic Offences</h3>
+          <p>Drink driving, traffic infringements, and licence disqualifications — defended by Adelaide&rsquo;s trusted traffic lawyers.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-pills"></i></div>
+          <h3>Drug Offences</h3>
+          <p>Possession, trafficking and manufacturing charges met with a carefully prepared, evidence-led defence strategy.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-fist-raised"></i></div>
+          <h3>Assault Offences</h3>
+          <p>Common, aggravated and serious assault charges require the expertise of a lawyer who understands what is at stake.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-house-user"></i></div>
+          <h3>Domestic Violence</h3>
+          <p>Sensitive, confidential guidance through intervention orders and related domestic and family violence matters.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-unlock-alt"></i></div>
+          <h3>Bail Applications</h3>
+          <p>Fast, focused bail applications and reviews — because early representation changes outcomes.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-hand-paper"></i></div>
+          <h3>Theft &amp; Dishonesty</h3>
+          <p>Shoplifting, fraud and dishonesty offences, defended with discretion and a clear path forward.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-door-open"></i></div>
+          <h3>Trespass Offences</h3>
+          <p>Understanding the unique defences available for trespass and unlawful entry charges across South Australia.</p>
+        </div>
+        <div class="lf-practice-card lf-reveal-item">
+          <div class="lf-practice-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>Fees &amp; Legal Aid</h3>
+          <p>Transparent fee structures and guidance on Legal Aid eligibility so cost is never a barrier to representation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="lf-section lf-section-muted" id="why-us">
+    <div class="lf-container">
+      <div class="lf-why">
+        <div class="lf-why-media lf-reveal" aria-hidden="true">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <i class="fas fa-university" style="font-size:5.5rem;color:rgba(184,147,90,0.35);"></i>
+          </div>
+          <div class="lf-why-media-badge">
+            <strong>20+</strong>
+            <span>Years of Trust</span>
+          </div>
+        </div>
+
+        <div class="lf-reveal">
+          <span class="lf-eyebrow">Why Choose Con O&rsquo;Neill &amp; Associates</span>
+          <h2 style="margin-bottom:1.25rem;">A Firm Built Around Your Case, Not a Caseload</h2>
+          <p style="margin-bottom: 0;">Con O&rsquo;Neill &amp; Associates is a leading traffic and criminal law firm in Adelaide. Every client receives direct access to experienced counsel, a clear-eyed assessment of their matter, and a defence built specifically around the facts of their case — not a one-size-fits-all approach.</p>
+
+          <ul class="lf-why-list">
+            <li>
+              <span class="lf-why-icon"><i class="fas fa-user-tie"></i></span>
+              <div>
+                <h4>Genuine Experience</h4>
+                <p>Decades of combined experience across Criminal and Road Traffic Offences before South Australian courts.</p>
+              </div>
+            </li>
+            <li>
+              <span class="lf-why-icon"><i class="fas fa-compass"></i></span>
+              <div>
+                <h4>A Considered Approach</h4>
+                <p>Every matter starts with a thorough case review — clients understand their options before any decision is made.</p>
+              </div>
+            </li>
+            <li>
+              <span class="lf-why-icon"><i class="fas fa-chart-line"></i></span>
+              <div>
+                <h4>Proven Results</h4>
+                <p>A consistent record of outcomes for clients across traffic, criminal and dishonesty matters in Adelaide.</p>
+              </div>
+            </li>
+            <li>
+              <span class="lf-why-icon"><i class="fas fa-hand-holding-usd"></i></span>
+              <div>
+                <h4>Transparent Fees &amp; Legal Aid</h4>
+                <p>Clear, upfront cost information and support navigating Legal Aid eligibility from the very first call.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#contact" class="lf-btn lf-btn-outline-dark">Discuss Your Case</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="lf-section lf-section-dark" id="testimonials">
+    <div class="lf-container">
+      <div class="lf-section-head center on-dark lf-reveal">
+        <span class="lf-eyebrow">Client Reviews</span>
+        <h2>Trusted by the Clients We Represent</h2>
+      </div>
+
+      <div class="lf-testimonials-track" id="lf-testimonial-track">
+        <div class="lf-testimonial">
+          <div class="lf-testimonial-card">
+            <div class="lf-testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="lf-testimonial-text">From our first phone call, Con took the time to explain every option clearly. The outcome was better than I could have hoped for, and I never once felt like just another file on the desk.</p>
+            <div class="lf-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="lf-testimonial-author"><strong>Traffic Offence Client</strong><span>Adelaide, SA</span></div>
+          </div>
+        </div>
+        <div class="lf-testimonial">
+          <div class="lf-testimonial-card">
+            <div class="lf-testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="lf-testimonial-text">Professional, discreet and always reachable when it mattered most. The advice on Legal Aid eligibility alone made a stressful process feel manageable.</p>
+            <div class="lf-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="lf-testimonial-author"><strong>Criminal Law Client</strong><span>Salisbury, SA</span></div>
+          </div>
+        </div>
+        <div class="lf-testimonial">
+          <div class="lf-testimonial-card">
+            <div class="lf-testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="lf-testimonial-text">I appreciated the honesty from day one — no false promises, just a clear strategy and steady communication right through to the result.</p>
+            <div class="lf-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="lf-testimonial-author"><strong>Bail Application Client</strong><span>Adelaide, SA</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lf-testimonial-dots" id="lf-testimonial-dots"></div>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section class="lf-section lf-section-light" id="team">
+    <div class="lf-container">
+      <div class="lf-section-head center lf-reveal">
+        <span class="lf-eyebrow">Our Team</span>
+        <h2>Meet Your Lawyer</h2>
+      </div>
+
+      <div class="lf-why" style="align-items:center;">
+        <div class="lf-team-photo lf-reveal" style="aspect-ratio:4/5;" aria-hidden="true">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <i class="fas fa-user-tie" style="font-size:6rem;color:rgba(184,147,90,0.35);"></i>
+          </div>
+        </div>
+
+        <div class="lf-reveal">
+          <h3 style="font-size:1.9rem;margin-bottom:0.3rem;">Con O&rsquo;Neill</h3>
+          <span class="lf-team-role">Principal Lawyer, Con O&rsquo;Neill &amp; Associates</span>
+          <p>Con O&rsquo;Neill has spent his career representing clients across Adelaide and South Australia in Criminal and Road Traffic matters. Known for a direct, considered style and a genuine commitment to every client&rsquo;s outcome, Con leads a firm built on experience, accessibility and results.</p>
+          <p>He is supported by a dedicated team at O&rsquo;Neill Partners, working across both the Adelaide and Salisbury offices to ensure every client has access to timely, expert legal advice.</p>
+          <div class="lf-office-actions">
+            <a href="tel:+61438691859" class="lf-btn lf-btn-outline-dark"><i class="fas fa-phone-alt"></i> Call Direct</a>
+            <a href="mailto:con@oneill.net" class="lf-btn lf-btn-outline-dark"><i class="fas fa-envelope"></i> Email Con</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="lf-section lf-section-muted" id="contact">
+    <div class="lf-container">
+      <div class="lf-section-head center lf-reveal">
+        <span class="lf-eyebrow">Get In Touch</span>
+        <h2>Speak to Us Today, In Person or By Phone</h2>
+        <p style="margin:0 auto;">Free, no-obligation consultations are available at both our Adelaide and Salisbury offices.</p>
+      </div>
+
+      <div class="lf-contact-grid">
+        <div class="lf-office-card lf-reveal">
+          <h3>Adelaide Office</h3>
+          <div class="lf-office-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><strong>Address</strong>80A Angas Street, Adelaide SA 5000, Australia</div>
+          </div>
+          <div class="lf-office-row">
+            <i class="fas fa-phone-alt"></i>
+            <div><strong>Phone</strong><a href="tel:+61861234567">(08) 6123 4567</a></div>
+          </div>
+          <div class="lf-office-row">
+            <i class="fas fa-clock"></i>
+            <div><strong>Hours</strong>Open today &middot; 09:00 &ndash; 17:00</div>
+          </div>
+          <div class="lf-office-actions">
+            <a href="#" class="lf-btn lf-btn-gold">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="lf-office-card lf-reveal">
+          <h3>Salisbury Office</h3>
+          <div class="lf-office-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><strong>Address</strong>35 Bridge Street, Salisbury SA 5108, Australia</div>
+          </div>
+          <div class="lf-office-row">
+            <i class="fas fa-phone-alt"></i>
+            <div><strong>Phone</strong><a href="tel:+61438691859">0438 691 859</a></div>
+          </div>
+          <div class="lf-office-row">
+            <i class="fas fa-clock"></i>
+            <div><strong>Hours</strong>Open today &middot; 09:00 &ndash; 17:00</div>
+          </div>
+          <div class="lf-office-actions">
+            <a href="https://wa.me/61438691859" class="lf-btn lf-btn-gold"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lf-contact-form-wrap lf-reveal">
+        <h3 style="margin-bottom:0.5rem;">Request a Free Consultation</h3>
+        <p style="margin-bottom:2rem;font-size:0.94rem;">Tell us briefly about your matter and we&rsquo;ll respond within one business day.</p>
+        <form action="#" method="post">
+          <div class="lf-form-row">
+            <div class="lf-field">
+              <label for="lf-name">Full Name</label>
+              <input type="text" id="lf-name" name="name" required>
+            </div>
+            <div class="lf-field">
+              <label for="lf-phone">Phone Number</label>
+              <input type="tel" id="lf-phone" name="phone" required>
+            </div>
+          </div>
+          <div class="lf-form-row">
+            <div class="lf-field full">
+              <label for="lf-email">Email Address</label>
+              <input type="email" id="lf-email" name="email" required>
+            </div>
+          </div>
+          <div class="lf-form-row">
+            <div class="lf-field full">
+              <label for="lf-message">Tell Us About Your Matter</label>
+              <textarea id="lf-message" name="message" rows="5" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="lf-btn lf-btn-gold">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
+  <footer class="lf-footer">
+    <div class="lf-container">
+      <div class="lf-footer-grid">
+        <div class="lf-footer-brand">
+          <span class="lf-brand-name">Con O&rsquo;Neill <em>&amp; Associates</em></span>
+          <p class="lf-footer-tagline">Trusted criminal and traffic law representation across Adelaide and South Australia.</p>
+          <div class="lf-footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h5>Practice Areas</h5>
+          <ul>
+            <li><a href="#practice-areas">Traffic Offences</a></li>
+            <li><a href="#practice-areas">Drug Offences</a></li>
+            <li><a href="#practice-areas">Assault Offences</a></li>
+            <li><a href="#practice-areas">Domestic Violence</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>The Firm</h5>
+          <ul>
+            <li><a href="#why-us">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="tel:+61438691859">0438 691 859</a></li>
+            <li><a href="mailto:con@oneill.net">con@oneill.net</a></li>
+            <li>80A Angas St, Adelaide SA 5000</li>
+            <li>35 Bridge St, Salisbury SA 5108</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lf-footer-bottom">
+        <span>Copyright &copy; <span id="lf-year"></span> Con O&rsquo;Neill &amp; Associates. All rights reserved.</span>
+        <span>Liability limited by a scheme approved under Professional Standards Legislation.</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <!-- Scroll to Top Button -->
+  <a href="#page-top" class="lf-to-top" id="lf-to-top" aria-label="Back to top">
     <i class="fas fa-angle-up"></i>
   </a>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+  <!-- Con O'Neill & Associates custom scripts -->
+  <script src="js/law-firm.js"></script>
 
 </body>
 
