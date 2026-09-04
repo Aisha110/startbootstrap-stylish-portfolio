@@ -150,20 +150,29 @@ button:focus-visible,
 .lf-btn-outline-dark:hover { background: var(--color-ink); color: var(--color-white); }
 
 /* ==========================================================================
+   Top Bar
+   ========================================================================== */
+
+.lf-topbar { background: var(--color-ink); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.lf-topbar-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.55rem 0; }
+.lf-topbar-item { color: var(--color-body-dark); font-size: 0.8rem; letter-spacing: 0.02em; }
+.lf-topbar-item i { color: var(--color-gold); margin-right: 0.5rem; }
+@media (max-width: 767px) { .lf-topbar-item:last-child { display: none; } }
+
+/* ==========================================================================
    Navigation
    ========================================================================== */
 
 .lf-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: sticky;
+  top: 0;
   z-index: 1000;
-  padding: 1.5rem 0;
-  background: transparent;
-  transition: background var(--dur-med) var(--ease-out), padding var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
+  padding: 1.25rem 0;
+  background: rgba(12, 10, 9, 0.96);
+  backdrop-filter: blur(10px);
+  transition: padding var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
 }
 .lf-nav.is-scrolled {
-  background: rgba(12, 10, 9, 0.94);
-  backdrop-filter: blur(10px);
   padding: 0.9rem 0;
   box-shadow: 0 8px 30px rgba(0,0,0,0.25);
 }
@@ -243,33 +252,9 @@ button:focus-visible,
    Hero
    ========================================================================== */
 
-.lf-hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 9rem 0 6rem;
-  background:
-    linear-gradient(180deg, rgba(12,10,9,0.55) 0%, rgba(12,10,9,0.78) 55%, var(--color-ink) 100%),
-    repeating-linear-gradient(115deg, rgba(184,147,90,0.05) 0px, rgba(184,147,90,0.05) 1px, transparent 1px, transparent 68px),
-    radial-gradient(circle at 82% 18%, rgba(184,147,90,0.16), transparent 45%),
-    linear-gradient(140deg, #14110f 0%, #1c1917 45%, #0c0a09 100%);
-  color: var(--color-white);
-  overflow: hidden;
-}
-.lf-hero::before {
-  /* faint classical column silhouette, pure CSS/SVG — stands in for on-site photography */
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800' preserveAspectRatio='xMaxYMax slice'%3E%3Cg fill='%23ffffff' fill-opacity='0.035'%3E%3Crect x='760' y='120' width='36' height='620'/%3E%3Crect x='840' y='120' width='36' height='620'/%3E%3Crect x='920' y='120' width='36' height='620'/%3E%3Crect x='1000' y='120' width='36' height='620'/%3E%3Crect x='1080' y='120' width='36' height='620'/%3E%3Crect x='700' y='90' width='460' height='34'/%3E%3Crect x='700' y='700' width='460' height='40'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: min(60vw, 900px);
-  opacity: 0.9;
-  pointer-events: none;
-}
-.lf-hero-inner { position: relative; z-index: 2; max-width: 760px; }
+.lf-hero { background: var(--color-cream); padding: 5rem 0; overflow: hidden; }
+.lf-hero-split { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 3.5rem; align-items: center; }
+
 .lf-hero-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -278,46 +263,67 @@ button:focus-visible,
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--color-gold);
-  margin-bottom: 1.75rem;
+  color: var(--color-gold-deep);
+  margin-bottom: 1.5rem;
 }
-.lf-hero-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--color-gold); }
-.lf-hero h1 {
-  color: var(--color-white);
-  font-size: clamp(2.5rem, 5.6vw, 4.4rem);
+.lf-hero-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--color-gold-deep); }
+.lf-hero-statement {
+  font-family: var(--font-body);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+  color: var(--color-ink);
   margin: 0 0 1.5rem;
 }
-.lf-hero h1 em { font-style: italic; color: var(--color-gold); }
-.lf-hero-lede {
-  font-size: 1.15rem;
-  color: var(--color-body-dark);
-  max-width: 620px;
-  margin: 0 0 2.75rem;
-}
-.lf-hero-actions { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-bottom: 3.5rem; }
-.lf-hero-meta { display: flex; flex-wrap: wrap; gap: 2.5rem; }
-.lf-hero-meta-item { display: flex; align-items: center; gap: 0.85rem; }
-.lf-hero-meta-item i { color: var(--color-gold); font-size: 1.2rem; }
-.lf-hero-meta-item span { display: block; font-size: 0.78rem; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; }
-.lf-hero-meta-item strong { display: block; font-family: var(--font-display); font-size: 1.05rem; color: var(--color-white); font-weight: 600; }
+.lf-hero-statement span { color: var(--color-gold-deep); }
+.lf-hero-lede { font-size: 1.1rem; color: var(--color-body); max-width: 560px; margin: 0 0 1.75rem; }
 
-.lf-scroll-cue {
+.lf-hero-checklist { list-style: none; margin: 0 0 2.25rem; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+.lf-hero-checklist li { display: flex; align-items: center; gap: 0.75rem; font-size: 0.98rem; font-weight: 500; color: var(--color-ink); }
+.lf-hero-checklist i { color: var(--color-gold-deep); font-size: 1.05rem; }
+
+.lf-hero-actions { display: flex; flex-wrap: wrap; gap: 1.1rem; }
+
+.lf-hero-portrait { position: relative; }
+.lf-hero-portrait-shape {
   position: absolute;
-  bottom: 2.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-  color: rgba(255,255,255,0.55);
-  font-size: 0.68rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  z-index: 2;
+  top: -6%; right: -10%;
+  width: 78%; height: 112%;
+  background: linear-gradient(155deg, var(--color-gold-deep), var(--color-gold));
+  transform: rotate(6deg);
+  z-index: 0;
 }
-.lf-scroll-cue-line { width: 1px; height: 34px; background: linear-gradient(var(--color-gold), transparent); animation: lf-scroll-cue-move 1.8s var(--ease-out) infinite; }
-@keyframes lf-scroll-cue-move { 0% { transform: scaleY(0); transform-origin: top; opacity: 0; } 40% { transform: scaleY(1); transform-origin: top; opacity: 1; } 60% { transform: scaleY(1); transform-origin: bottom; opacity: 1; } 100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; } }
+.lf-hero-portrait-frame {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: linear-gradient(155deg, var(--color-charcoal) 0%, var(--color-charcoal-2) 100%);
+  box-shadow: 0 30px 60px -20px rgba(12,10,9,0.35);
+}
+.lf-hero-portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
+.lf-hero-portrait-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.lf-hero-portrait-placeholder i { font-size: 6rem; color: rgba(184,147,90,0.35); }
+.lf-hero-portrait-badge {
+  position: absolute;
+  z-index: 2;
+  left: -1.5rem;
+  bottom: 1.75rem;
+  background: var(--color-ink);
+  color: var(--color-white);
+  padding: 1.4rem 1.75rem;
+  text-align: center;
+  box-shadow: 0 20px 40px -14px rgba(12,10,9,0.4);
+}
+.lf-hero-portrait-badge strong { display: block; font-family: var(--font-display); font-size: 1.9rem; color: var(--color-gold); line-height: 1; }
+.lf-hero-portrait-badge span { display: block; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.35rem; }
+
+@media (max-width: 899px) {
+  .lf-hero-split { grid-template-columns: 1fr; gap: 3rem; }
+  .lf-hero-portrait { max-width: 380px; margin: 0 auto; }
+}
 
 /* ==========================================================================
    Stats / Experience strip
