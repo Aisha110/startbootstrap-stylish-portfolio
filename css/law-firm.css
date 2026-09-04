@@ -326,6 +326,39 @@ button:focus-visible,
 }
 
 /* ==========================================================================
+   Overview (photo collage + stats)
+   ========================================================================== */
+
+.lf-overview { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 4.5rem; align-items: center; }
+.lf-overview-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.lf-collage-col { display: flex; flex-direction: column; gap: 1.25rem; }
+.lf-collage-col-offset { margin-top: 2.75rem; }
+.lf-collage-img {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(155deg, var(--color-charcoal) 0%, var(--color-charcoal-2) 100%);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(184,147,90,0.35);
+  font-size: 2.5rem;
+}
+.lf-collage-img.c2 { aspect-ratio: 1 / 1.35; }
+.lf-collage-img.c3 { aspect-ratio: 1 / 1.15; }
+
+.lf-overview-title { font-size: clamp(2rem, 3.2vw, 2.6rem); margin: 0 0 1.25rem; }
+.lf-overview-title strong { color: var(--color-gold-deep); font-weight: 700; }
+.lf-overview-lede { font-size: 1.08rem; margin: 0 0 2.25rem; max-width: 520px; }
+.lf-overview-stats { display: flex; gap: 3rem; padding: 1.75rem 0; margin-bottom: 2rem; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.lf-overview-stat strong { display: block; font-family: var(--font-display); font-size: 1.9rem; color: var(--color-gold-deep); font-weight: 700; line-height: 1; }
+.lf-overview-stat span { display: block; font-size: 0.82rem; color: var(--color-body); margin-top: 0.4rem; }
+
+@media (max-width: 899px) {
+  .lf-overview { grid-template-columns: 1fr; gap: 2.5rem; }
+  .lf-overview-stats { flex-wrap: wrap; gap: 1.75rem; }
+}
+@media (max-width: 460px) {
+  .lf-collage-col-offset { margin-top: 0; }
+}
+
+/* ==========================================================================
    Stats / Experience strip
    ========================================================================== */
 
